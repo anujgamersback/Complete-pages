@@ -210,5 +210,92 @@ const AgentsData = [
     }
 ];
 
+const ProfileData = [
+    {
+      'S.No': 1,
+      'Player': 'John Doe',
+      'Rank': 'Gold',
+      'Role': 'Duelist',
+      'Agents': 'Jett',
+      'Place': 'Los Angeles',
+      'Language': 'English',
+      'Age': 25,
+      'Salary': '$50,000',
+      'Profile': 'https://example.com/profiles/johndoe'
+    },
+    {
+      'S.No': 2,
+      'Player': 'Jane Smith',
+      'Rank': 'Platinum',
+      'Role': 'Initiator',
+      'Agents': 'Brimstone',
+      'Place': 'New York',
+      'Language': 'Spanish',
+      'Age': 28,
+      'Salary': '$60,000',
+      'Profile': 'https://example.com/profiles/janesmith'
+    },
+    {
+      'S.No': 3,
+      'Player': 'Alice Johnson',
+      'Rank': 'Diamond',
+      'Role': 'Controller',
+      'Agents': 'Sova',
+      'Place': 'Chicago',
+      'Language': 'French',
+      'Age': 30,
+      'Salary': '$70,000',
+      'Profile': 'https://example.com/profiles/alicejohnson'
+    },
+    {
+      'S.No': 4,
+      'Player': 'Bob Brown',
+      'Rank': 'Gold',
+      'Role': 'Sentinel',
+      'Agents': 'Cypher',
+      'Place': 'Houston',
+      'Language': 'German',
+      'Age': 27,
+      'Salary': '$55,000',
+      'Profile': 'https://example.com/profiles/bobbrown'
+    },
+    {
+      'S.No': 5,
+      'Player': 'Eva Martinez',
+      'Rank': 'Diamond',
+      'Role': 'Duelist',
+      'Agents': 'Raze',
+      'Place': 'Miami',
+      'Language': 'English',
+      'Age': 26,
+      'Salary': '$65,000',
+      'Profile': 'https://example.com/profiles/evamartinez'
+    },
+    {
+      'S.No': 6,
+      'Player': 'Michael Wang',
+      'Rank': 'Platinum',
+      'Role': 'Initiator',
+      'Agents': 'Phoenix',
+      'Place': 'San Francisco',
+      'Language': 'Mandarin',
+      'Age': 29,
+      'Salary': '$62,000',
+      'Profile': 'https://example.com/profiles/michaelwang'
+    },
+    {
+      'S.No': 7,
+      'Player': 'Sophia Nguyen',
+      'Rank': 'Gold',
+      'Role': 'Controller',
+      'Agents': 'Killjoy',
+      'Place': 'Seattle',
+      'Language': 'Vietnamese',
+      'Age': 31,
+      'Salary': '$58,000',
+      'Profile': 'https://example.com/profiles/sophianguyen'
+    }
+  ];
 
-export { AgentsData, MapsData, WeaponsData };
+
+export { AgentsData, MapsData, WeaponsData,ProfileData };

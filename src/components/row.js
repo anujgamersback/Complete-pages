@@ -8,6 +8,9 @@ const Row = ({ data, option }) => {
   } else if (option === "Weapons") {
     return <WeaponRow data={data} />;
   }
+  else if (option === "profile") {
+    return <ProfileRow data={data} />;
+  }
 }
 
 
@@ -129,6 +132,55 @@ const AgentRow = memo(({ data }) => {
       </h3>
       <h3 className="m-0 absolute top-[10px] left-[830px] text-inherit leading-[20px] font-normal font-inherit">
         {data.Matches}
+      </h3>
+    </div>
+  );
+});
+
+const ProfileRow = memo(({ data }) => {
+  return (
+    <div
+      className="relative top-[0px] left-[60px] w-[815px] h-10 flex text-left text-sm text-gray-100 font-headings-h3 hover:flex hover:w-[815px] hover:h-10"
+      id="123"
+    >
+      <h3 className="m-0 relative top-[10px] left-[0px] text-inherit leading-[20px] font-normal font-inherit">
+        {data['S.No']}
+      </h3>
+      <div className="relative top-[0px] left-[50px] flex flex-row items-center justify-start gap-[12px]">
+        <img
+          className="w-10 relative rounded h-10 object-cover"
+          alt=""
+          src="/rectangle-17867@2x.png"
+        />
+        <h3 className="m-0 relative text-inherit leading-[25px] font-normal font-inherit">
+          {data.Player}
+        </h3>
+      </div>
+      <h3 className="m-0 absolute top-[10px] left-[201px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Rank}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[290px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Role}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[390px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Agents}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[490px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Place}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[600px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Language}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[710px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Age}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[790px] text-inherit leading-[20px] font-normal font-inherit">
+        {data.Salary}
+      </h3>
+      <h3 className="m-0 absolute top-[10px] left-[900px] text-inherit leading-[20px] font-normal font-inherit">
+        <a href={data.Profile} target="_blank" rel="noopener noreferrer">
+          View
+        </a>
       </h3>
     </div>
   );

@@ -5,12 +5,8 @@ import Footer from '../components/Footer';
 
 const Layout = () => {
   return (
-    <div className='flex-1 overflow-y-auto'>
-      <Header />
-      <div className='p-20 2xl:px-10'>
-        <Outlet />
-      </div>
-      <Footer />
+    <div className='flex-1 overflow-y-auto px-10'>
+        <Outlet/>
     </div>
   )
 }

@@ -20,4 +20,13 @@ const AgentOptions = [
     'Ep 7 - Act 1',
 ];
 
-export { MapOption, WeaponOptions, AgentOptions };
+const ProfileOptions = [
+    'Experience',
+    'Teams',
+    'Individuals',
+    'Ratings',
+    'Language',
+    'Salary',
+];
+
+export { MapOption, WeaponOptions, AgentOptions, ProfileOptions};

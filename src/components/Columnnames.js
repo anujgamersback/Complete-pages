@@ -30,4 +30,16 @@ const AgentColumns = [
   'Matches'
 ];
 
-export { MapColumns, WeaponColumns, AgentColumns };
+const ProfileColumns = [
+  'S.No',
+  'Player',
+  'Rank',
+  'Role',
+  'Agents',
+  'Place',
+  'Language',
+  'Age',
+  'Salary',
+  'Profile'
+]
+export { MapColumns, WeaponColumns, AgentColumns, ProfileColumns};

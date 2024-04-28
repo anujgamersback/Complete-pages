@@ -11,6 +11,7 @@ import {
 import ProfileDetailScreen from "./pages/profile-detail-screen";
 import Layout from "./pages/Layout";
 import Changebox from "./components/Changebox";
+import ScoutPlayers from "./pages/ScoutPlayers";
 
 
 function AppInner() {
@@ -65,14 +66,19 @@ const router = createBrowserRouter([
           { path: "Weapons", element: <Changebox option={"Weapons"} /> },
         ],
       },
-      // { path: "tasks", element: <Scout /> },
-    ],
-  },
-  {
-    path: "/profile",
-    element: <ProfileDetailScreen />,
+      {
+        path: "ScoutPlayers", element: <ScoutPlayers />,
+        children: [
+          { index: true, element: <Navigate to="/ScoutPlayers/profile" replace /> },
+          { path: "profile", element: <Changebox option={"profile"} /> },
+
+        ],
+      },
+    ]
   }
-]);
+],
+)
+
 
 
 function App() {

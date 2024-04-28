@@ -3,6 +3,7 @@ import Row from "./row";
 import { AgentsData } from "./dummyData";
 import { MapsData } from "./dummyData";
 import { WeaponsData } from "./dummyData";
+import { ProfileData } from "./dummyData";
 
 var dummyData = {}
 
@@ -15,6 +16,9 @@ const Table = memo(({option}) => {
   }
   else if(option === "Weapons") {
     dummyData = WeaponsData;
+  }
+  else if(option === "profile") {
+    dummyData = ProfileData;
   }
   return (
     <table className="absolute top-[418px] left-[240px] w-[957px] h-[431px]">
