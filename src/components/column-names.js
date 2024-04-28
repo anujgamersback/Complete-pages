@@ -1,25 +1,42 @@
-import { memo } from "react";
+import React, { memo } from "react";
+import { AgentColumns } from "./Columnnames";
+import { MapColumns } from "./Columnnames";
+import { WeaponColumns } from "./Columnnames";
 
-const ColumnNames = memo(() => {
+
+
+
+const Column = ({ label }) => {
   return (
-    <header className="absolute top-[376px] left-[252px] w-[817px] h-[18px] text-left text-xs text-grey-colors-dark-mode-100 font-headings-h2">
-      <h1 className="m-0 absolute top-[0px] left-[0px] text-inherit leading-[18px] font-normal font-inherit">
-        Rank
-      </h1>
-      <div className="absolute top-[0px] left-[104px] leading-[18px]">Map</div>
-      <div className="absolute top-[0px] left-[299px] leading-[18px]">
-        Play Rate
+    <td className="relative">
+      <div className="relative text-xs leading-[24px] font-headings-h2 text-grey-colors-dark-mode-100 text-left w-full h-full">
+      <span className="inline-block px-9" >{label}</span>
       </div>
-      <div className="absolute top-[0px] left-[425px] leading-[18px]">
-        Atk Round win%
-      </div>
-      <div className="absolute top-[0px] left-[596px] leading-[18px]">
-        Def Round win%
-      </div>
-      <div className="absolute top-[0px] left-[768px] leading-[18px]">
-        Matches
-      </div>
-    </header>
+    </td>
+  );
+};
+
+const ColumnNames = memo(({option}) => {
+  var columns = [];
+  if(option === "Agents") {
+    columns = AgentColumns;
+  }
+  else if(option === "Maps") {
+    columns = MapColumns;
+  }
+  else if(option === "Weapons") {
+    columns = WeaponColumns;
+  }
+  return (
+    <table className="absolute top-[376px] left-[250px] w-[817px] h-[18px]">
+      <tbody>
+        <tr>
+          {columns.map((label, index) => (
+            <Column key={index} label={label} />
+          ))}
+        </tr>
+      </tbody>
+    </table>
   );
 });
 

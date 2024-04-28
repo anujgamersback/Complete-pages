@@ -55,14 +55,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { index: true, element: <Navigate to="/ProfileDetailScreen" replace /> },
+      { index: true, element: <Navigate to="ProfileDetailScreen" replace /> },
       {
         path: "/ProfileDetailScreen", element: <ProfileDetailScreen />,
         children: [
-          { index: true, element: <Navigate to="Maps" replace /> },
+          { index: true, element: <Navigate to="/ProfileDetailScreen/Maps" replace /> },
           { path: "Maps", element: <Changebox option={"Maps"} /> },
           { path: "Agents", element: <Changebox option={"Agents"} /> },
-          { path: "Weapons", element: <Changebox option={"Agents"} /> },
+          { path: "Weapons", element: <Changebox option={"Weapons"} /> },
         ],
       },
       // { path: "tasks", element: <Scout /> },

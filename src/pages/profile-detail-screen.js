@@ -24,9 +24,9 @@ const ProfileDetailScreen = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full relative bg-black h-[1025px] overflow-hidden text-left text-[16px] text-grey-colors-dark-mode-100 font-headings-h2">
-      {/* <div className="absolute top-[calc(50%_-_596.5px)] left-[calc(50%_+_261px)] rounded-[50%] bg-blueviolet-100 [filter:blur(376px)] [backdrop-filter:blur(48px)] w-[449px] h-[528px] opacity-[0.2]" />
-      <div className="absolute top-[calc(50%_-_232.5px)] left-[calc(50%_-_734px)] rounded-[50%] bg-blueviolet-200 [filter:blur(376px)] [backdrop-filter:blur(48px)] w-[489px] h-[528px] opacity-[0.2]" /> */}
-      <div className="absolute top-[92px] left-[220px] flex flex-row items-center justify-start gap-[12px]">
+      <div className="absolute top-[calc(50%_-_596.5px)] left-[calc(50%_+_261px)] rounded-[50%] bg-blueviolet-100 [filter:blur(376px)] [backdrop-filter:blur(48px)] w-[449px] h-[528px] opacity-[0.2]" />
+      <div className="absolute top-[calc(50%_-_232.5px)] left-[calc(50%_-_734px)] rounded-[50%] bg-blueviolet-200 [filter:blur(376px)] [backdrop-filter:blur(48px)] w-[489px] h-[528px] opacity-[0.2]" />
+      <div className="absolute top-[92px] left-[250px] flex flex-row items-center justify-start gap-[12px]">
         <img
           className="w-[11.3px] relative h-[9.6px] object-contain"
           alt=""
@@ -39,10 +39,10 @@ const ProfileDetailScreen = () => {
       </div>
       <Box />
       <Upperinfo />
-      <h4 className="m-0 absolute top-[200px] left-[252px] text-sm leading-[20px] font-normal font-inherit">
+      <h4 className="m-0 absolute top-[200px] left-[272px] text-sm leading-[20px] font-normal font-inherit">
         View map win rates and play rates for any rank or game mode.
       </h4>
-      <nav className="m-0 absolute top-[252px] left-[252px] w-[231px] h-9">
+      <nav className="m-0 absolute top-[252px] left-[272px] w-[231px] h-9">
         <iframe className="absolute top-[32px] left-[0px] bg-primary-500 box-border w-[43px] h-1 border-[1px] border-solid border-primary-500" />
         <div className="absolute top-[0px] left-[0px] flex flex-row items-center justify-center gap-[32px]">
           <Button
@@ -50,7 +50,7 @@ const ProfileDetailScreen = () => {
             color="primary"
             variant="text"
             sx={{ borderRadius: "0px 0px 0px 0px" }}
-            onClick={() => <Navigate to="/ProfileDetailScreen/Maps" replace={true} />}
+            onClick={() =>  navigate('/ProfileDetailScreen/Maps')}
           >
             Maps
           </Button>
@@ -81,7 +81,7 @@ const ProfileDetailScreen = () => {
       </nav>
       <Outlet />
 
-      <div className="absolute top-[160px] left-[252px] flex flex-row items-center justify-start gap-[12px] text-xl text-gray-100">
+      <div className="absolute top-[160px] left-[270px] flex flex-row items-center justify-start gap-[12px] text-xl text-gray-100">
         <img
           className="w-7 relative h-7 object-cover"
           alt=""
@@ -92,7 +92,7 @@ const ProfileDetailScreen = () => {
         </h1>
       </div>
       <TextField
-        className="[border:none] bg-[transparent] absolute top-[312px] left-[1015px] font-headings-h2 text-sm text-gray-200"
+        className="[border:none] bg-[transparent] absolute top-[312px] left-[1065px] font-headings-h2 text-sm text-gray-200"
         color="primary"
         label="Search Agents"
         variant="outlined"

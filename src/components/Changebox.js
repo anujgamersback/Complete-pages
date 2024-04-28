@@ -6,11 +6,11 @@ import Table from './table'
 const Changebox = ({ option }) => {
   return (
     <div>
-      <DropdownMenu />
+      <DropdownMenu option={option} />
       <ColumnNames option={option} />
       <Table option={option} />
     </div>
   )
 }
 
-export default Changebox
+export default Changebox;
