@@ -62,7 +62,6 @@ const ProfileDetailScreen = () => {
               borderRadius: "0px 0px 0px 0px",
             }}
             onClick={(event) => {
-              console.log(id, source);
               setMap(true);
               setAgents(false);
               setWeapons(false);
